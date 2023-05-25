@@ -26,8 +26,8 @@ formComponent.content = loginForm(createPostComponent)
 
 canvas.addWidget(formComponent)
 
+const postComponent = new Component(canvas)
 async function createPostComponent(user : User):Promise<void>{
-  const postComponent = new Component(canvas)
   postComponent.content.innerText = ''
   postComponent.locationLeft = 7
   postComponent.locationTop = 7
